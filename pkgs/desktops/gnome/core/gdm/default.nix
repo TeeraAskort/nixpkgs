@@ -49,8 +49,8 @@ stdenv.mkDerivation rec {
   outputs = [ "out" "dev" ];
 
   src = fetchurl {
-    url = "mirror://gnome/sources/gdm/${lib.versions.major version}/${pname}-${version}.tar.xz";
-    sha256 = "oyisl2k3vsF5lx/weCmhJGuYznJBgcEorjKguketOFU=";
+    url = "https://gitlab.gnome.org/GNOME/gdm/-/archive/4a52f026dc0b218a2ca33fa32853c71a0f88a2b4/gdm-4a52f026dc0b218a2ca33fa32853c71a0f88a2b4.tar.gz";
+    sha256 = "0wbnpssv868gv9phg2rn67gx0lnch219p8imqcz9mzvka1a64mi6";
   };
 
   mesonFlags = [
